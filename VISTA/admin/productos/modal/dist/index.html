@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Modal</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<p id="button" class="btn" onclick="openmodal()">click me</p>
+
+<div id="myModal" class="modal">
+<div class="modal-content">
+<span class="close_modal" onclick="closemodal()">&times;</span>
+<p class="modal_text">You must be registered and logged in for this action.</p>
+<br>
+<form class="modal_voto">
+<a href="#" class="btn_modal" target="_blank">Login</a>
+<a href="#" class="btn_modal" target="_blank">Register</a>
+</form>
+</div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
