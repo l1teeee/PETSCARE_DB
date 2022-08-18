@@ -1,14 +1,12 @@
 /*LETRA
 
-
-
 font-family: 'Manrope', sans-serif;
 font-family: 'Noto Sans', sans-serif;
 LETRA*/
 
-
-
-
+html{
+    scroll-behavior: smooth;
+}
 
 *{
     margin: 0;
@@ -18,7 +16,7 @@ LETRA*/
 
 ::-webkit-scrollbar{
     width: 7px;
-    background-color: #DBF6E9;
+    background-color: #FFF2EA;
 }
 
 ::-webkit-scrollbar-thumb{
@@ -35,79 +33,14 @@ header{
 }
 
 header .sup{
-  height: auto;
-  background-color: #FFF2EA;
-  display: flex;
-  justify-content: space-between;
-}
-
-header #logo{
-  margin: 1vw 0vw 1vw 0vw;
-}
-
-header #logo img{
-  width: 6%;
-  height: 100%;
-  margin: 2px 0px 0px 12vw;
-    
-}
-
-header .sup .men{
+    height: auto;
+    background-color: #FFF2EA;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin-right: 10vw;
-}
-
-header .sup .men .cat{
-  display: flex;
-  flex-direction: row;
-  margin-right: vw;
 }
 
 
-
-header .sup .men .cat i{
-  color: #36251d;
-  font-size: 25px;
-  margin: 15px 1vw 1vw 1vw;
-}
-
-header .sup .men .cat i:hover{
-  color: #FFF2EA !important;
-  transition: 1.8s;
-    -webkit-transition: 1.8s;
-    -moz-transition: 1.8s;
-    -ms-transition: 1.8s;
-    -o-transition: 1.8s;
-}
-
-
-
-header .sup .men .pro i{
-    color: #36251d;
-    font-size: 40px;
-    margin: 27px 1vw 1vw 1vw;
-}
-
-header .sup .men .pro i:hover{
-  color: #FFF2EA !important;
-  transition: 1.8s;
-    -webkit-transition: 1.8s;
-    -moz-transition: 1.8s;
-    -ms-transition: 1.8s;
-    -o-transition: 1.8s;
-}
-
-
-
-#sep1{
-    background-color: #cabeb7;
-    height: 1px;
-    width: auto;
-}
-
-
+/*MENU CEL*/
 #cssmenu
 {
     width:auto;
@@ -434,13 +367,97 @@ header .sup .men .pro i:hover{
 
 
 
+/*MENU CEL*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header .sup .men{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 10vw;
+}
+
+header .sup .men .cat{
+    display: flex;
+    flex-direction: row;
+    margin-right: vw;
+}
+
+
+
+header .sup .men .cat i{
+    color: #36251d;
+    font-size: 25px;
+    margin: 15px 1vw 1vw 1vw;
+}
+
+header .sup .men .cat i:hover{
+    color: #FFF2EA !important;
+    transition: 1.8s;
+    -webkit-transition: 1.8s;
+    -moz-transition: 1.8s;
+    -ms-transition: 1.8s;
+    -o-transition: 1.8s;
+}
+
+
+
+header .sup .men .pro i{
+    color: #36251d;
+    font-size: 40px;
+}
+
+header .sup .men .pro i:hover{
+    color: #FFF2EA !important;
+    transition: 1.8s;
+    -webkit-transition: 1.8s;
+    -moz-transition: 1.8s;
+    -ms-transition: 1.8s;
+    -o-transition: 1.8s;
+}
+
+header .sup .men .pro1 i{
+    color: #36251d;
+    font-size: 40px;
+}
+
+header .sup .men .pro1 i:hover{
+    color: #FFF2EA !important;
+    transition: 1.8s;
+    -webkit-transition: 1.8s;
+    -moz-transition: 1.8s;
+    -ms-transition: 1.8s;
+    -o-transition: 1.8s;
+}
+
+
+
+#sep1{
+    background-color: #cabeb7;
+    height: 1px;
+    width: auto;
+}
  
 
 /*Header*/
 
 
-
-
+/*prueba*/
 
 main {
     flex: 1 1 100vh;
@@ -460,6 +477,7 @@ main {
   }
   
   
+  /* ALL TOOLTIP STYLES */
   [tooltip] {
     position: relative; 
   }
@@ -502,11 +520,13 @@ main {
     display: block;
   }
   
+  /* don't show empty tooltips */
   [tooltip='']::before,
   [tooltip='']::after {
     display: none !important;
   }
   
+  /* TOOLTIP: UP */
   [tooltip]:not([flow])::before,
   [tooltip][flow^="up"]::before {
     bottom: 100%;
@@ -525,6 +545,7 @@ main {
     transform: translate(-50%, -.5em);
   }
   
+  /* TOOLTIP: DOWN */
   [tooltip][flow^="down"]::before {
     top: 100%;
     border-top-width: 0;
@@ -539,6 +560,7 @@ main {
     transform: translate(-50%, .5em);
   }
   
+  /* TOOLTIP: LEFT */
   [tooltip][flow^="left"]::before {
     top: 50%;
     border-right-width: 0;
@@ -552,6 +574,7 @@ main {
     transform: translate(-.5em, -50%);
   }
   
+  /* TOOLTIP: RIGHT */
   [tooltip][flow^="right"]::before {
     top: 50%;
     border-left-width: 0;
@@ -565,6 +588,7 @@ main {
     transform: translate(.5em, -50%);
   }
   
+  /* KEYFRAMES */
   @keyframes tooltips-vert {
     to {
       opacity: .9;
@@ -595,236 +619,156 @@ main {
     animation: tooltips-horz 300ms ease-out forwards;
   }
 
-
-
-  /*prueba*/
-
+/*prueba*/
 
 
 
 /*Body*/
-
-.dias{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 0px 16vw 0px 16vw;
-  padding: 2vw 0px 1vw 0px;
-  
+body{
+    transition: all .3s;
 }
 
 
-.comple{
-  
+body .prin{
+    display: flex;
+    flex-direction: row;
+    background-color:#FFF2EA;
+}
+
+body .prin .comple{
+    font-family: 'Manrope', sans-serif;
+    color: #36251d;
+    
+}
+
+.dividis{
+    display: flex;
+    flex-direction: row;
+}
+
+.publica{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
 
-.tarjeta{
-  background: rgba(10, 201, 74, 0.75);
-  backdrop-filter: blur( 17.5px );
-  -webkit-backdrop-filter: blur( 17.5px );
-  border-radius: 15px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  margin: 12px 16px 12px 16px;
-  
+.pic{
+    display: flex;
+    flex-direction: row;
 }
 
-#current_date, #current_date1, #current_date2, #current_date3, #current_date4, #current_date5, #current_date6{
-  font-family:'Manrope', sans-serif;
-  text-align: center;
-  color: #fff;
-  margin: 0px;
+.agrega{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
-#current_day{
-  font-family:'Noto Sans', sans-serif;
-  text-align: center;
-  color: rgb(235, 233, 233);
+.furm{
+    text-align: center;
+    width: 50%;
+    background-color: #ceffef;
+    border-radius: 12px;
+    margin-left: 35%;
+    margin-top: 3vw;
 }
 
-#cit{
-  font-family:'Manrope', sans-serif;
-  text-align: center;
-  color: rgb(235, 233, 233);
-  margin: 0px 0px 10px 0px;
-  padding: 0px;
+.furm h1{
+    margin-top: 2vw;
+    font-size: 18px;
 }
 
-.comp{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 1vw 17vw 1vw 17vw;
-}
-
-.disponi{
-  display: flex;
-  flex-direction: column;
-}
-
-.doc{
-  background: rgba( 255, 255, 255, 0.8 );
-  box-shadow: 0 8px 32px 0 rgba(239, 240, 255, 0.37);
-  backdrop-filter: blur( 5px );
-  -webkit-backdrop-filter: blur( 5px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  border-radius: 12px;
-  margin-bottom: 2vw;
+.furm h2{
+    margin-bottom: 2vw;
+    font-size: 16px;
 }
 
 
-#titulito{
-  font-family: 'Manrope', sans-serif;
-  font-size: 24px;
-  text-align: center;
-  margin-top: 18px;
-  margin-bottom: 14px;
+.furm button{
+    margin-bottom: 1vw;
 }
 
-.doctores {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.valora{
+    background-color: #ffebb8;
+    border-radius: 0px 0px 12px 12px;
 }
 
-.doctores i{
-  color: #1dea7d;
-  font-size: 21px;
-  margin-top: 3%;
-  margin-right: 5%;
-}
-
-.doctores h1{
-  margin-left: 15px;
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 20px;
-  text-align: left;
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-
-.vete{
-  display: flex;
-  flex-direction: column;
-  width: 18vw;
-  background: rgba( 255, 255, 255, 0.8 );
-  box-shadow: 0 8px 32px 0 rgba(239, 240, 255, 0.37);
-  backdrop-filter: blur( 5px );
-  -webkit-backdrop-filter: blur( 5px );
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  border-radius: 12px;
-  margin-bottom: 2vw;
-}
-
-#elevet{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-#nara{
-  font-family:  'Manrope', sans-serif;
-  font-size: 20px;
-  color: #333;
-  margin-top: 18px;
-  margin-left: 15px;
-  margin-bottom: 12px;
-}
-
-#ja{
-  font-family:  'Manrope', sans-serif;
-  font-size: 20px;
-  color: #ff9800;
-  margin-top: 18px;
-  margin-left: 5px;
-  margin-bottom: 12px;
-}
-
-#mounth{
-  width: 88%;
-  border-radius: 15px;
-  border: 1px solid #f8e4d8;
-  margin-left: 15px;
-  font-size: 14px;
-  font-family: 'Noto Sans', sans-serif;
-  padding:7px;
-}
-
-.hor{
-  display: flex;
-  flex-direction: column;
-  margin-left: 1vw;
+.publica{
+    width: 30%;
+    margin-left: 13vw;
+    margin-top: 3vw;
+    height: auto;
 }
 
 
-.tur{
-  display: flex;
-  flex-direction: row;
-  width: 91%;
-  background: rgba( 255, 255, 255, 0.8 );
-  box-shadow: 0 8px 32px 0 rgba(239, 240, 255, 0.37);
-  backdrop-filter: blur( 5px );
-  border: 1px solid #ff9800;
-  -webkit-backdrop-filter: blur( 5px );
-  border-radius: 12px;
+/*BOTON */
+
+
+/*BOTON*/
+
+.publicacion{
+    justify-content: space-around;
+    background-color: #FFCB42;
+    margin-top: 1vw;
+    border-radius: 12px;
+
 }
 
 
 
-#masc{
-  border-radius: 100%;
-  width: 100%;
-  height: 100%;
+#btn{
+    border: 2px solid #000000;
+    padding: 10px 20px;
+    color: #ffe786;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 24px;
+    font-family: sans-serif;
+    transition: all .5s;
+    border-radius: 12px;
+    z-index: 1;
 }
 
-.tur .efo{
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  margin-left: 15px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+#btn:before{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top:  -600%;
+    left: -100%;
+    background: #ff9800;
+    border-radius: 12px;
+    transition: all .5s;
+    z-index: -5;
+        
+}
+#btn:hover{
+    color: white;
+}
+#btn:hover:before{			
+    top: 0;
+    left: 0;
+
 }
 
-#prof{
-  position: relative;
-  margin-top: -42px;
-  margin-left: 20px;
-  border-radius: 50%;
-  width: 70%;
-  height: 100%;
-}
 
-.tur .ifo .min{
-  margin-left: 20px;
-  margin-top: 15px;
+
+
+.loading{
+    opacity: 0;
 }
 
 
-#extr1{
-  display: flex;
-  flex-direction: row;
-  margin-left: 10px;
-}
 
-#extr1 i{
-  margin-top: 7%;
-  font-size: 25px;
-}
 
-#extr1 h1{
-  margin-top: 7%;
-  font-size: 25px;
-  margin-left: 10px;
-  color: #666666;
-}
 
 /*Body*/
 
 /*FOOter*/
 
 footer .fin{
+    margin-top: 3vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -856,50 +800,88 @@ footer .fin #name p{
 
 /*FOOter*/
 
+/*MENU*/
 
+/*MENU*/
+
+
+/*RESPONSIVE*/
 
 @media(max-width:2599px) and (min-width:1200px){
-  header .sup .men .pro i{
-    margin: 29px 1vw 1vw 1vw;
-  }
-  
-  header #logo{
-    margin: 1vw 0vw 1vw 0vw;
-  }
+    header .sup .men .pro i{
+        margin: 29px 1vw 1vw 1vw;
+    }
+    
+    header #logo{
+        margin: 1vw 0vw 1vw 0vw;
+    }
 
-  header #logo img{
-    width: 6%;
-    height: 100%;
-    margin: 2px 0px 0px 12vw;  
-  }
-  
-  #menuDemo{
-    visibility:hidden;
-    display:none;
-  }
+    header #logo img{
+        width: 6%;
+        height: 100%;
+        margin: 2px 0px 0px 12vw;
+        
+    }
+    
+    #menuDemo{
+        visibility:hidden;
+        display:none;
+    }
 
-  .tarjeta{
-    width: 7vw;
+    
 
-  }
+    .pic{
+        margin: 10px;
+    }
 
-  #current_date, #current_date1, #current_date2, #current_date3, #current_date4, #current_date5, #current_date6{
-    font-size: 46px;
-  }
+    .pic img{
+        width: 10%;
+        height: 90%;
+        border-radius: 50%;
+        margin-top: 6px;
+        margin-left: 5px;
+        margin-bottom: 6px;
+    }
 
-  
-  #current_day{
-  font-size: 18px;
-  }
+    .pic h1{
+        font-size: 20px;
+        margin-left: 13px;
+    }
 
-#cit{
-  font-size: 40px;
-}
+    .agrega{
+        display: flex;
+        flex-direction: column;
+    }
 
-.doc{
-  width: 18vw;
-}
+    
+    
 
+
+    .conti{
+        background-color: #f4f4f4e5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conti img{
+        width: 80%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .lov h1{
+        font-size: 20px;
+        margin-top: 8px;
+        margin-left: 18px;      
+    }
+
+    .valora{
+        margin: 0px;
+    }
+
+    
+    
 
 
 }
@@ -909,97 +891,25 @@ footer .fin #name p{
 
 
 @media(max-width:1199.99px) and (min-width:901px){
-  header #logo{
-    margin: 1vw 0vw 1vw 0vw;
-  }
+    header #logo{
+        margin: 1vw 0vw 1vw 0vw;
+    }
 
-  header .sup .men .pro i{
-    margin: 26px 1vw 1vw 1vw;
-  }
+    header .sup .men .pro i{
+        margin: 26px 1vw 1vw 1vw;
+    }
 
-  header #logo img{
-    width: 8%;
-    height: 95%;
-    margin: 2px 0px 0px 12vw;
-      
-  }
-  
-  #menuDemo{
-      visibility:hidden;
-      display:none;
-  }
-
-  .tarjeta{
-    width: 8vw;
-    height: 10vw;
-  }
-
-  #cit{
-    visibility:hidden;
-      display:none;
-  }
-
-  #current_date, #current_date1, #current_date2, #current_date3, #current_date4, #current_date5, #current_date6{
-    font-size: 40px;
-  }
-
+    header #logo img{
+        width: 8%;
+        height: 95%;
+        margin: 2px 0px 0px 12vw;
+        
+    }
     
-  #current_day{
-    font-size: 15px;
-  }
-
-  #cit{
-  font-size: 34px;
-  }
-
-  .doc{
-    width: 18vw;
-  }
-
-  .doc #titulito{
-    font-size: 19px;
-  }
-
-  .doc .doctores h1{
-    font-size: 17px;
-  }
-
-  .doc .doctores i{
-    font-size: 15px;
-    margin-top: 13px;
-  }
-
-  .vete #nara, #ja{
-    font-size: 15px;
-  }
-
-  .efo #masc{
-    width: 90%;
-    height: 60%;
-  }
-
-  .efo #prof{
-    width: 70%;
-    height: 50%;
-    margin-top: -20px;
-    margin-left: 8px;
-  }
-
-  .ifo #extr h1{
-    font-size: 25px;
-  }
-
-  .ifo #extr1 h1{
-    font-size: 19px;
-
-  }
-
-  .ifo #extr1 i{
-    font-size: 19px;
-
-  }
-
-
+    #menuDemo{
+        visibility:hidden;
+        display:none;
+    }
 
 
 }
@@ -1011,106 +921,30 @@ footer .fin #name p{
 
 
 @media(max-width:900px) and (min-width:751px){
-  #menuDemo{
-      visibility:hidden;
-      display:none;
-  }
+    #menuDemo{
+        visibility:hidden;
+        display:none;
+    }
 
-  header .sup .men .pro i{
-      margin: 20px 1vw 1vw 1vw;
-  }
+    header .sup .men .pro i{
+        margin: 20px 1vw 1vw 1vw;
+    }
 
-  header #logo img{
-      width: 10%;
-      height: 90%;
-      margin: 2px 0px 0px 12vw;
-      
-  }
+    header #logo img{
+        width: 10%;
+        height: 90%;
+        margin: 2px 0px 0px 12vw;
+        
+    }
 
-  body .prin .comple .button{
-      visibility:hidden;
-      display:none;
-  }
+    body .prin .comple .button{
+        visibility:hidden;
+        display:none;
+    }
 
-  header #logo{
-      margin: 1vw 0vw 1vw 0vw;
-  }
-
-  .tarjeta{
-    width: 10vw;
-    height: 12vw;
-  }
-
-  #cit{
-    visibility:hidden;
-      display:none;
-  }
-
-  #current_date, #current_date1, #current_date2, #current_date3, #current_date4, #current_date5, #current_date6{
-    font-size: 40px;
-  }
-
-    
-  #current_day{
-    font-size: 15px;
-  }
-
-  #cit{
-  font-size: 34px;
-  }
-
-  .doc{
-    width: 23vw;
-  }
-
-  .vete{
-    width: 23vw;
-  }
-
-  .doc #titulito{
-    font-size: 16px;
-  }
-
-  .doc .doctores h1{
-    font-size: 17px;
-  }
-
-  .doc .doctores i{
-    font-size: 15px;
-    margin-top: 13px;
-  }
-
-  .vete #nara, #ja{
-    font-size: 15px;
-  }
-
-  .efo #masc{
-    width: 90%;
-    height: 50%;
-  }
-
-  .efo #prof{
-    width: 70%;
-    height: 40%;
-    margin-top: -23px;
-    margin-left: 6px;
-  }
-
-  .ifo #extr h1{
-    font-size: 17px;
-  }
-
-  .ifo #extr1 h1{
-    font-size: 15px;
-
-  }
-
-  .ifo #extr1 i{
-    font-size: 15px;
-    margin-left: 0;
-
-  }
-
+    header #logo{
+        margin: 1vw 0vw 1vw 0vw;
+    }
 
 }
 
@@ -1119,213 +953,121 @@ footer .fin #name p{
 
 
 @media(max-width:750.99px) and (min-width:551px){
-  header #logo img{
-      width: 6vw;
-      height: 6vw;
-      margin: 2px 0px 0px 12vw;
-      position: absolute;
+    header #logo img{
+        width: 6vw;
+        height: 6vw;
+        margin: 2px 0px 0px 12vw;
+        position: absolute;
 
-  }
+    }
 
-  header #logo{
-      margin: 1vw 0vw 1vw 0vw;
-  }
-  
-  header .sup .men .pro1 i{
-      margin: 10px 1vw 1vw 1vw;
-  }
-
-  
-
-  #menuDemo{
-      margin-top: 1vw;
-      margin-right: 13vw;
-      
-  }
-  .sup .men .cat{
-      visibility:hidden;
-      display:none;
-  }
-
-  .sup .men .pro{
-      visibility:hidden;
-      display:none;
-  }
-
-  
-  .tarjeta{
-    width: 10vw;
-    height: 12vw;
-  }
-
-  .comp{
-    flex-direction: column;
-  }
-
-  .disponi{
-    flex-direction: row;
-    width: 100%;
-  }
-
-  .doc{
-    width: 23vw;
-  }
-
-  .vete{
-    width: 23vw;
-    margin-left: 1vw;
-  }
-
-  .dias{
-    visibility:hidden;
-      display:none;
-  }
-
-  #current_date, #current_date1, #current_date2, #current_date3, #current_date4, #current_date5, #current_date6{
-    font-size: 40px;
-  }
+    header #logo{
+        margin: 1vw 0vw 1vw 0vw;
+    }
+    
+    header .sup .men .pro1 i{
+        margin: 10px 1vw 1vw 1vw;
+    }
 
     
-  #current_day{
-    font-size: 15px;
-  }
 
-  #cit{
-  font-size: 34px;
-  }
+    #menuDemo{
+        margin-top: 1vw;
+        margin-right: 13vw;
+        
+    }
 
-  .doc{
-    width: 23vw;
-  }
 
-  .vete{
-    width: 23vw;
-  }
+    
+    .sup .men .cat{
+        visibility:hidden;
+        display:none;
+    }
 
-  .doc #titulito{
-    font-size: 16px;
-  }
-
-  .doc .doctores h1{
-    font-size: 17px;
-  }
-
-  .doc .doctores i{
-    font-size: 15px;
-    margin-top: 13px;
-  }
-
-  .vete #nara, #ja{
-    font-size: 15px;
-  }
-
-  .efo #masc{
-    width: 90%;
-    height: 50%;
-  }
-
-  .efo #prof{
-    width: 70%;
-    height: 40%;
-    margin-top: -23px;
-    margin-left: 6px;
-  }
-
-  .ifo #extr h1{
-    font-size: 17px;
-  }
-
-  .ifo #extr1 h1{
-    font-size: 15px;
-
-  }
-
-  .ifo #extr1 i{
-    font-size: 15px;
-    margin-left: 0;
-
-  }
-
+    .sup .men .pro{
+        visibility:hidden;
+        display:none;
+    }
 
 
 }
 
 
 @media(max-width:550.99px) and (min-width:450px){
-  header #logo img{
-      width: 7vw;
-      height: 8vw;
-      margin: 2px 0px 0px 12vw;
-      position: absolute;
+    header #logo img{
+        width: 7vw;
+        height: 8vw;
+        margin: 2px 0px 0px 12vw;
+        position: absolute;
 
-  }
+    }
 
-  header #logo{
-      margin: 1vw 0vw 1vw 0vw;
-  }
-  
-  header .sup .men .pro1 i{
-      margin: 10px 1vw 1vw 1vw;
-  }
+    header #logo{
+        margin: 1vw 0vw 1vw 0vw;
+    }
+    
+    header .sup .men .pro1 i{
+        margin: 10px 1vw 1vw 1vw;
+    }
 
-  
+    
 
-  #menuDemo{
-      margin-top: 1vw;
-      margin-right: 13vw;
-      
-  }
+    #menuDemo{
+        margin-top: 1vw;
+        margin-right: 13vw;
+        
+    }
 
-  
-  
-  .sup .men .cat{
-      visibility:hidden;
-      display:none;
-  }
+    
+    
+    .sup .men .cat{
+        visibility:hidden;
+        display:none;
+    }
 
-  .sup .men .pro{
-      visibility:hidden;
-      display:none;
-  }
+    .sup .men .pro{
+        visibility:hidden;
+        display:none;
+    }
 
 
 }
 
 @media(max-width:450.99px) and (min-width:379px){
-  header #logo img{
-      width: 9vw;
-      height: 10vw;
-      margin: 2px 0px 0px 12vw;
-      position: absolute;
+    header #logo img{
+        width: 9vw;
+        height: 10vw;
+        margin: 2px 0px 0px 12vw;
+        position: absolute;
 
-  }
+    }
 
-  header #logo{
-      margin: 1vw 0vw 1vw 0vw;
-  }
-  
-  header .sup .men .pro1 i{
-      margin: 10px 1vw 1vw 1vw;
-  }
+    header #logo{
+        margin: 1vw 0vw 1vw 0vw;
+    }
+    
+    header .sup .men .pro1 i{
+        margin: 10px 1vw 1vw 1vw;
+    }
 
-  
+    
 
-  #menuDemo{
-      margin-top: 1vw;
-      margin-right: 13vw;
-      
-  }
-  
-  .sup .men .cat{
-      visibility:hidden;
-      display:none;
-  }
+    #menuDemo{
+        margin-top: 1vw;
+        margin-right: 13vw;
+        
+    }
+    
+    .sup .men .cat{
+        visibility:hidden;
+        display:none;
+    }
 
-  .sup .men .pro{
-      visibility:hidden;
-      display:none;
-  }
-  
+    .sup .men .pro{
+        visibility:hidden;
+        display:none;
+    }
+    
 
 }
 
@@ -1334,35 +1076,35 @@ footer .fin #name p{
 
 
 @media(max-width:378px) and (min-width:200px){
-  header #logo img{
-      width: 10vw;
-      height: 11vw;
-      margin: 2px 0px 0px 12vw;
-      position: absolute;
+    header #logo img{
+        width: 10vw;
+        height: 11vw;
+        margin: 2px 0px 0px 12vw;
+        position: absolute;
 
-  }
+    }
 
-  header #logo{
-      margin: 1vw 0vw 1vw 0vw;
-  }
-  
-  header .sup .men .pro1 i{
-      margin: 10px 1vw 1vw 1vw;
-  }
+    header #logo{
+        margin: 1vw 0vw 1vw 0vw;
+    }
+    
+    header .sup .men .pro1 i{
+        margin: 10px 1vw 1vw 1vw;
+    }
 
-  #menuDemo{
-      margin-top: 1vw;
-      margin-right: 13vw;
-      
-  }
-  
-  .sup .men .cat{
-      visibility:hidden;
-      display:none;
-  }
+    #menuDemo{
+        margin-top: 1vw;
+        margin-right: 13vw;
+        
+    }
+    
+    .sup .men .cat{
+        visibility:hidden;
+        display:none;
+    }
 
-  .sup .men .pro{
-      visibility:hidden;
-      display:none;
-  }
+    .sup .men .pro{
+        visibility:hidden;
+        display:none;
+    }
 }
